@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[     37852,        726]
-NotebookOptionsPosition[     36846,        690]
-NotebookOutlinePosition[     37398,        711]
-CellTagsIndexPosition[     37355,        708]
+NotebookDataLength[     38621,        745]
+NotebookOptionsPosition[     37617,        709]
+NotebookOutlinePosition[     38167,        730]
+CellTagsIndexPosition[     38124,        727]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -72,6 +72,8 @@ Cell[BoxData[{
     RowBox[{"Real", "[", 
      RowBox[{
       RowBox[{"qn$$", "[", 
+       RowBox[{"3", ",", "3"}], "]"}], ",", 
+      RowBox[{"qn1$$", "[", 
        RowBox[{"3", ",", "3"}], "]"}], ",", "dgamma$$", ",", 
       RowBox[{"c$$", "[", "6", "]"}], ",", 
       RowBox[{"nn$$", "[", 
@@ -86,6 +88,14 @@ Cell[BoxData[{
    RowBox[{"SMSReal", "[", 
     RowBox[{"Array", "[", 
      RowBox[{"qn$$", ",", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3"}], "}"}]}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"qn1", "\[DoubleRightTee]", 
+   RowBox[{"SMSReal", "[", 
+    RowBox[{"Array", "[", 
+     RowBox[{"qn1$$", ",", 
       RowBox[{"{", 
        RowBox[{"3", ",", "3"}], "}"}]}], "]"}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
@@ -163,6 +173,12 @@ Cell[BoxData[{
     RowBox[{"{", 
      RowBox[{"j", ",", "3"}], "}"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
+  RowBox[{"dq", "\[DoubleRightTee]", 
+   RowBox[{"SMSInverse", "[", "dq", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"qn1", "\[DoubleRightTee]", 
+   RowBox[{"qn", ".", "dq"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"cmatrix", "=", 
    RowBox[{"{", 
     RowBox[{
@@ -232,6 +248,9 @@ Cell[BoxData[{
   RowBox[{"dcedc", "\[DoubleRightTee]", 
    RowBox[{"SMSD", "[", 
     RowBox[{"ce", ",", "c"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SMSExport", "[", 
+   RowBox[{"qn1", ",", "qn1$$"}], "]"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"SMSExport", "[", 
    RowBox[{"ce", ",", "ce$$"}], "]"}], ";"}], "\[IndentingNewLine]", 
@@ -516,7 +535,7 @@ Cell[BoxData[{
    3.792481055868454*^9}, {3.792481433985323*^9, 3.792481575019656*^9}, {
    3.792481607926093*^9, 3.79248162948595*^9}, {3.792481876694724*^9, 
    3.7924819021995277`*^9}, {3.792481955078228*^9, 3.792481968884474*^9}, 
-   3.792487218416175*^9}],
+   3.792487218416175*^9, {3.7927270103769693`*^9, 3.792727113050067*^9}}],
 
 Cell[BoxData["True"], "Output",
  CellChangeTimes->{
@@ -559,7 +578,7 @@ Cell[BoxData["True"], "Output",
    3.788613293558278*^9, 3.789209875596335*^9, 3.7892205525337257`*^9, 
    3.78965318146808*^9, 3.7898164533118277`*^9, 3.78982285326388*^9, 
    3.789823630354662*^9, 3.792398495974415*^9, 3.792481585740367*^9, 
-   3.792482011086896*^9, 3.79248723509157*^9}],
+   3.792482011086896*^9, 3.79248723509157*^9, 3.7927271206359158`*^9}],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -579,7 +598,7 @@ Cell[BoxData[
       BackFaceColor->RGBColor[0, 0, 1],
       GraphicsColor->RGBColor[0, 0, 1],
       FontWeight->Bold,
-      FontColor->RGBColor[0, 0, 1]], "9619"},
+      FontColor->RGBColor[0, 0, 1]], "11030"},
     {"\<\"Methods\"\>", "\<\"No.Formulae\"\>", "\<\"No.Leafs\"\>", 
      "\[SpanFromLeft]"},
     {
@@ -590,7 +609,7 @@ Cell[BoxData[
       BackFaceColor->RGBColor[0, 0, 1],
       GraphicsColor->RGBColor[0, 0, 1],
       FontWeight->Bold,
-      FontColor->RGBColor[0, 0, 1]], "121", "5007", "\[SpanFromLeft]"}
+      FontColor->RGBColor[0, 0, 1]], "185", "5088", "\[SpanFromLeft]"}
    },
    AutoDelete->False,
    GridBoxDividers->{"Rows" -> {1, 2}},
@@ -598,13 +617,13 @@ Cell[BoxData[
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Grid"]], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQBOLNzlzHUi3fOHId5/sJov2ObrBIA9Jvlr5akgWkX8wQ
+1:eJxTTMoPSmVkYGDQAuLNzlzHUi3fOHId5/sJov2ObrBIA9Jvlr5akgWkX8wQ
 C8sG0snd/9hyQOIbrctBNM+iP9tzgfQ+JelvIPpKd7huHpB+ljU/txZIeyUt
 +lgHpJ/nPbWuB9LLIl7OBtE1udM9m4B0vEn8GhDtUbNKoRVI34/7H9YJpM0W
 NZSD6JK320+B6GdL/wt3AelHYTrK3UD63f7ZdSB6av12jilA2ke8SmMzkDY0
 WWd7AEiXeeQkgOiKTt0KEF2zrLL/KpDeYbU58g6Qbjvl9tLE6o2jseQU4wjr
 N44t5j5ZsUC6oPb4cgObN45bPpkmNgBpN/U5Dc1A+sUt/dcg+sYxAZFcRyDf
-efqyqUD6332+OyC6W0omcwaQBgDeiqOr
+efqyqUD6332+OyC6W0omcwaQLuo73cXr9MYRAA+Jp30=
   "]]
 }, Open  ]],
 
@@ -674,7 +693,7 @@ Cell[BoxData[
    3.7886134503337593`*^9, 3.7892100126954603`*^9, 3.789220690612049*^9, 
    3.789653310447762*^9, 3.789816585885322*^9, 3.789822981080855*^9, 
    3.7898238531122923`*^9, 3.792398496569796*^9, 3.792481591649077*^9, 
-   3.792482016495772*^9, 3.792487241097848*^9}]
+   3.792482016495772*^9, 3.792487241097848*^9, 3.792727126400741*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -689,7 +708,7 @@ Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.466348308323692*^9, 3.466348314383057*^9}}]
 },
 WindowSize->{2558, 1055},
-WindowMargins->{{Automatic, -95}, {Automatic, 228}},
+WindowMargins->{{1, Automatic}, {208, Automatic}},
 PrintingPageRange->{Automatic, Automatic},
 PrintingOptions->{"Magnification"->1.,
 "PaperOrientation"->"Portrait",
@@ -716,18 +735,18 @@ Cell[1042, 32, 923, 18, 65, "Message"]
 }, Open  ]],
 Cell[1980, 53, 150, 4, 143, "Input"],
 Cell[CellGroupData[{
-Cell[2155, 61, 26008, 457, 1555, "Input"],
-Cell[28166, 520, 2896, 41, 134, "Output"],
-Cell[31065, 563, 1705, 44, 176, "Print"]
+Cell[2155, 61, 26720, 476, 1791, "Input"],
+Cell[28878, 539, 2920, 41, 134, "Output"],
+Cell[31801, 582, 1718, 44, 176, "Print"]
 }, Open  ]],
-Cell[32785, 610, 89, 1, 134, "Input"],
+Cell[33534, 629, 89, 1, 134, "Input"],
 Cell[CellGroupData[{
-Cell[32899, 615, 324, 9, 134, "Input"],
-Cell[33226, 626, 3199, 50, 134, "Output"]
+Cell[33648, 634, 324, 9, 134, "Input"],
+Cell[33975, 645, 3221, 50, 134, "Output"]
 }, Open  ]],
-Cell[36440, 679, 68, 1, 134, "Input"],
-Cell[36511, 682, 236, 3, 134, "Input"],
-Cell[36750, 687, 92, 1, 134, "Input"]
+Cell[37211, 698, 68, 1, 134, "Input"],
+Cell[37282, 701, 236, 3, 134, "Input"],
+Cell[37521, 706, 92, 1, 134, "Input"]
 }
 ]
 *)
